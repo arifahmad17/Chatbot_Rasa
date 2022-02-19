@@ -1,0 +1,68 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: GeekforGeek story 
+  steps:
+  - intent: send_email
+  - action: utter_ask_email
+  - intent: email_name
+    entities:
+    - email: "abc@gmail.com"
+  - slot_was_set:
+    - email: 'abc@gmail.com'
+  - action: utter_ask_subject
+  - intent: subject_name
+    entities:
+    - subject: "Internship"
+  - slot_was_set:
+    - subject: 'Internship'
+  - action: utter_ask_message
+  - intent: message_name
+    entities:
+    - message: "Hi how are you"
+  - slot_was_set:
+    - message: "Hi how are you"
+  - action: action_submit
+
+# - story: path3
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: inform
+#     entities:
+#     - location: "Chennai"
+#   - slot_was_set:
+#     - location: "Chennai"
+#   - action: action_weather
+
+#   - intent:  goodbye
+#   - action:  utter_goodbye
