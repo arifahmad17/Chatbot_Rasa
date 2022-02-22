@@ -27,7 +27,7 @@ def send_email(to_addr,subject,message):
     try:
 
 
-        smtp_server.login(from_addr,"8765881360")
+        smtp_server.login(from_addr,"password")
         
         text=msg.as_string()
 
