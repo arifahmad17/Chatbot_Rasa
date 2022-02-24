@@ -99,39 +99,41 @@ nlu:
 
 - intent: email_name
   examples: |
-    - My email id is [arifurfi.arif6@gmail.com](email)
-    - My email id is [arifurfi@gmail.com](email)
-    - [praveen123@hotmail.com](email)
-    - email id [rahul123@hotmail.com](email)
-    - [arjun.mittal10@yahoo.com](email) is my email id
-    - [abhishek_singh@gmail.com](email)
+    - arifurfi.arif6@gmail.com
+    - arifurfi@gmail.com
+    - praveen123@hotmail.com
+    - rahul123@hotmail.com
+    - arjun.mittal10@yahoo.com
+    - abhishek_singh@gmail.com
 
 - intent: subject_name
   examples: |
-    - [Internship Application](subject)
-    - [Leave Application](subject)
-    - [Invitation for meeting](subject)
-    - [Invitation](subject)
-    - [Random](subject)
-    - [Greet](subject)
-    - [Project Discussion](subject)
-    - [Sorry](subject)
-    - [Congratulations](subject)
-    - [Best Of Luck](subject)
-    - [iuftsduf ufd sd](subject)
-    - [jshgd](subject)
-
+    - Internship Application
+    - Leave Application
+    - Invitation for meeting
+    - Invitation
+    - Random
+    - Greet
+    - Project Discussion
+    - Sorry
+    - Congratulations
+    - Best Of Luck
+    - iuftsduf ufd sd
+    - jshgd
+    - Internship 
 - intent: message_name
   examples: |
-    - [Hi! how are you](message)
-    - [Could you ping me later](message)
-    - [Waiting for your reply](message)
-    - [what is the due date of the assignment](message)
-    - [Can you please tell me the last date](message)
-    - [How are you doing.](message)
-    - [I am fine what are you.](message)
-    - [No thanks I am good.](message)
-    - [What are you doing now a days](message)
-    - [What is your interest.](message)
-    - [Congratulations](message)
-    - [Nothing](message)
+    - Hi! how are you
+    - Could you ping me later
+    - Waiting for your reply
+    - what is the due date of the assignment
+    - Can you please tell me the last date
+    - How are you doing.
+    - I am fine what are you.
+    - No thanks I am good.
+    - What are you doing now a days
+    - What is your interest.
+    - Congratulations
+    - Nothing
+    - fhgdsaf h
+    - ujdhgaskujfdg

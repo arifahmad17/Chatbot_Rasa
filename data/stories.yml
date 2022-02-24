@@ -30,29 +30,38 @@ stories:
   - action: utter_goodbye
 
 
-- story: GeekforGeek story 
+- story: story 
   steps:
   - intent: send_email
   - action: utter_ask_email
   - intent: email_name
-    entities:
-    - email: "abc@gmail.com"
   - slot_was_set:
     - email: 'abc@gmail.com'
-  - action: utter_ask_subject
+  - action: action_subject_name
   - intent: subject_name
-    entities:
-    - subject: "Internship"
   - slot_was_set:
     - subject: 'Internship'
-  - action: utter_ask_message
+  - action: action_message_name
   - intent: message_name
-    entities:
-    - message: "Hi how are you"
   - slot_was_set:
     - message: "Hi how are you"
-  - action: action_submit
+  - action: action_mail_submit
+  - checkpoint: check_info
 
+- story: path
+  steps:
+  - checkpoint: check_info
+  - intent: affirm
+  - action: action_submit
+  - intent: mood_great
+  - action: utter_goodbye
+
+- story: path1
+  steps:
+  - checkpoint: check_info
+  - intent: deny
+  - action: utter_thanks
+  
 # - story: path3
 #   steps:
 #   - intent: greet
