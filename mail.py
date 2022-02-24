@@ -6,7 +6,7 @@ from matplotlib.pyplot import text
 
 
 def send_email(to_addr,subject,message):
-    from_addr="arifurfi.arif6@gmail.com"
+    from_addr="your_email_id"
     msg=MIMEMultipart()
     msg["From"]=from_addr
     msg["To"]=to_addr
@@ -27,7 +27,7 @@ def send_email(to_addr,subject,message):
     try:
 
 
-        smtp_server.login(from_addr,"8765881360")
+        smtp_server.login(from_addr,"password")
         
         text=msg.as_string()
 
